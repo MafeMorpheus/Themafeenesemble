@@ -213,7 +213,7 @@ img {
   /* Replace hero-group.jpg with your actual photo filename */
   background-image: url('./images/hero-group.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center 70%;
   background-repeat: no-repeat;
 }
 
