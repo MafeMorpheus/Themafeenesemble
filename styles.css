@@ -357,14 +357,24 @@ img {
   aspect-ratio: 4/5;
 }
 
+.member-card__image--tall {
+  aspect-ratio: 5/9;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .member-card__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .member-card__info {
   padding: 32px;
+}
+
+.member-card--tall {
+  grid-column: span 1;
 }
 
 .member-card__name {
