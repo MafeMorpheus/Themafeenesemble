@@ -341,11 +341,68 @@ img {
   letter-spacing: -0.01em;
 }
 
+/* Featured Members - Horizontal Layout */
+.members__featured {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.member-featured {
+  flex: 1;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.member-featured__image {
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  max-height: 500px;
+}
+
+.member-featured__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-featured__info {
+  padding: 32px;
+}
+
+.member-featured__name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.member-featured__bio p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--gray-600);
+  margin-bottom: 16px;
+}
+
+.member-featured__quote {
+  font-style: italic;
+  border-left: 3px solid var(--terracotta);
+  padding-left: 20px;
+  margin-top: 24px;
+  color: var(--gray-800);
+}
+
+/* Secondary Members - 2 Column Grid */
 .members__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 48px;
-  align-items: start;
+}
+
+.members__grid--secondary {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .member-card {
@@ -360,24 +417,14 @@ img {
   aspect-ratio: 4/5;
 }
 
-.member-card__image--tall {
-  aspect-ratio: 5/9;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 .member-card__image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .member-card__info {
   padding: 32px;
-}
-
-.member-card--tall {
-  grid-column: span 1;
 }
 
 .member-card__name {
@@ -385,24 +432,14 @@ img {
   font-weight: 500;
   margin-bottom: 16px;
   letter-spacing: -0.01em;
-}
-
-.member-card__bio p {
-  font-size: 0.9375rem;
-  line-height: 1.7;
-  color: var(--gray-600);
-  margin-bottom: 16px;
-}
-
-.member-card__quote {
-  font-style: italic;
-  border-left: 3px solid var(--terracotta);
-  padding-left: 20px;
-  margin-top: 24px;
-  color: var(--gray-800);
+  text-align: center;
 }
 
 @media (max-width: 968px) {
+  .members__featured {
+    flex-direction: column;
+  }
+  
   .members__grid {
     grid-template-columns: 1fr;
   }
