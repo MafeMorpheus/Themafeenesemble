@@ -423,8 +423,9 @@ img {
 }
 
 .members__grid--secondary {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .member-card {
