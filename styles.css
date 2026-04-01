@@ -303,15 +303,15 @@ img {
 
 .about__grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 80px;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
   align-items: center;
 }
 
 .about__image img {
   width: 100%;
   height: auto;
-  max-height: 600px;
+  max-height: 700px;
   object-fit: cover;
 }
 
