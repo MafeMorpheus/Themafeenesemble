@@ -355,7 +355,7 @@ img {
 .member-card--featured {
   grid-column: span 2;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 400px 1fr;
   gap: 48px;
   padding: 48px;
 }
@@ -366,6 +366,11 @@ img {
 
 .member-card--featured .member-card__image {
   aspect-ratio: 1;
+  max-height: 500px;
+}
+
+.member-card:not(.member-card--featured) .member-card__image {
+  max-height: 350px;
 }
 
 .member-card__image img {
@@ -423,8 +428,13 @@ img {
   }
   
   .member-card--featured .member-card__image {
-    max-width: 300px;
+    max-width: 350px;
+    max-height: 350px;
     margin: 0 auto;
+  }
+  
+  .member-card:not(.member-card--featured) .member-card__image {
+    max-height: 280px;
   }
 }
 
