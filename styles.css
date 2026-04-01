@@ -405,7 +405,7 @@ img {
 }
 
 .members__grid--secondary {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -419,6 +419,7 @@ img {
 .member-card__image {
   overflow: hidden;
   aspect-ratio: 4/5;
+  max-height: 550px;
 }
 
 .member-card__image img {
