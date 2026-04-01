@@ -342,6 +342,17 @@ img {
 }
 
 /* Featured Members - Masonry Layout */
+.members__founding {
+  margin-bottom: 48px;
+}
+
+.members__founding img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
 .members__masonry {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
