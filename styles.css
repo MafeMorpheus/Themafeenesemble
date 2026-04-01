@@ -352,25 +352,9 @@ img {
   overflow: hidden;
 }
 
-.member-card--featured {
-  grid-column: span 2;
-  display: grid;
-  grid-template-columns: 400px 1fr;
-  gap: 48px;
-  padding: 48px;
-}
-
 .member-card__image {
   overflow: hidden;
-}
-
-.member-card--featured .member-card__image {
-  aspect-ratio: 1;
-  max-height: 500px;
-}
-
-.member-card:not(.member-card--featured) .member-card__image {
-  max-height: 350px;
+  aspect-ratio: 4/5;
 }
 
 .member-card__image img {
@@ -379,19 +363,8 @@ img {
   object-fit: cover;
 }
 
-.member-card:not(.member-card--featured) .member-card__image {
-  aspect-ratio: 3/4;
-}
-
 .member-card__info {
   padding: 32px;
-}
-
-.member-card--featured .member-card__info {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .member-card__name {
@@ -419,22 +392,6 @@ img {
 @media (max-width: 968px) {
   .members__grid {
     grid-template-columns: 1fr;
-  }
-  
-  .member-card--featured {
-    grid-column: span 1;
-    grid-template-columns: 1fr;
-    padding: 32px;
-  }
-  
-  .member-card--featured .member-card__image {
-    max-width: 350px;
-    max-height: 350px;
-    margin: 0 auto;
-  }
-  
-  .member-card:not(.member-card--featured) .member-card__image {
-    max-height: 280px;
   }
 }
 
