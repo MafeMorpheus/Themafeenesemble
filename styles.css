@@ -345,11 +345,14 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 48px;
+  align-items: start;
 }
 
 .member-card {
   background: var(--white);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .member-card__image {
