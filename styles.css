@@ -229,7 +229,6 @@ img {
   text-align: center;
   padding: 0 24px;
   max-width: 900px;
-  margin-top: 15vh;
 }
 
 .hero__eyebrow {
@@ -460,9 +459,10 @@ img {
 }
 
 .members__grid--secondary {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
 }
 
 .member-card {
@@ -815,6 +815,13 @@ img {
   transform: translateY(0);
 }
 
+/* Desktop: Push hero content down */
+@media (min-width: 969px) {
+  .hero__content {
+    margin-top: 12vh;
+  }
+}
+
 /* ============================================
    RESPONSIVE
    ============================================ */
@@ -845,7 +852,7 @@ img {
   }
 
   .members__grid--secondary {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact__grid {
