@@ -269,8 +269,9 @@ img {
 
 .hero__epk {
   position: absolute;
-  bottom: 100px;
-  right: 100px;
+  bottom: 80px;
+  right: 50%;
+  transform: translateX(120%);
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -815,10 +816,24 @@ img {
   transform: translateY(0);
 }
 
-/* Desktop: Push hero content down */
+/* Desktop: Title at top, subtitle lower */
 @media (min-width: 969px) {
   .hero__content {
-    margin-top: 12vh;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5vh;
+    height: 100%;
+  }
+  
+  .hero__title {
+    margin-bottom: 45vh;
+  }
+  
+  .hero__subtitle {
+    margin-top: auto;
+    margin-bottom: 15vh;
   }
 }
 
@@ -910,7 +925,23 @@ img {
 
 @media (max-width: 768px) {
   .hero__content {
-    margin-top: 20vh;
+    margin-top: 0;
+    padding-top: 3vh;
+  }
+  
+  .hero__title {
+    margin-bottom: 55vh;
+  }
+  
+  .hero__subtitle {
+    margin-top: auto;
+    margin-bottom: 12vh;
+  }
+  
+  .hero__epk {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 60px;
   }
   
   .members__grid--secondary {
