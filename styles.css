@@ -473,6 +473,13 @@ img {
   text-align: center;
 }
 
+.member-card__bio {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--gray-600);
+  text-align: center;
+}
+
 @media (max-width: 968px) {
   .members__masonry {
     grid-template-columns: 1fr;
