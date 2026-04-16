@@ -451,30 +451,24 @@ img {
 
 .member-card__image {
   overflow: hidden;
-  height: 750px !important;
-  min-height: 750px !important;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  background: var(--gray-100);
+  aspect-ratio: 4/5;
+  max-height: 550px;
 }
 
 .member-card__image img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .member-card__info {
-  padding: 24px;
+  padding: 32px;
 }
 
 .member-card__name {
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   letter-spacing: -0.01em;
   text-align: center;
 }
