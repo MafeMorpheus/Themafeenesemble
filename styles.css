@@ -451,8 +451,7 @@ img {
 
 .member-card__image {
   overflow: hidden;
-  aspect-ratio: 4/5;
-  max-height: 550px;
+  height: 550px;
 }
 
 .member-card__image img {
