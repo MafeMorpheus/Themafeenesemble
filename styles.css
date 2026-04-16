@@ -377,10 +377,9 @@ img {
 .members__masonry {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: masonry;
   gap: 48px;
   margin-bottom: 48px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .member-masonry {
@@ -413,20 +412,24 @@ img {
   object-position: center 60%;
 }
 
-.member-masonry--tall {
-  min-height: 1000px;
-}
-
-.member-masonry--sal {
-  min-height: 1050px;
-}
-
+.member-masonry--tall,
+.member-masonry--sal,
 .member-masonry--shannon {
-  min-height: 1050px;
+  min-height: 1100px;
 }
 
 .member-masonry__info {
   padding: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-masonry__bio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .member-masonry__name {
