@@ -395,15 +395,19 @@ img {
 
 .member-masonry__image {
   overflow: hidden;
-  height: 650px;
+  height: 600px;
 }
 
 .member-masonry__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 70%;
+  object-position: center center;
   display: block;
+}
+
+.member-masonry--tall {
+  min-height: 900px;
 }
 
 .member-masonry__info {
