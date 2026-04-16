@@ -395,14 +395,14 @@ img {
 
 .member-masonry__image {
   overflow: hidden;
-  height: 500px;
+  height: 650px;
 }
 
 .member-masonry__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 70%;
   display: block;
 }
 
