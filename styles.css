@@ -451,7 +451,8 @@ img {
 
 .member-card__image {
   overflow: hidden;
-  height: 750px;
+  height: 750px !important;
+  min-height: 750px !important;
   display: flex;
   align-items: flex-start;
   justify-content: center;
