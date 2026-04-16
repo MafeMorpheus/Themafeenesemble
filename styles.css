@@ -402,12 +402,27 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
   display: block;
 }
 
+.member-masonry--sal .member-masonry__image img {
+  object-position: center top;
+}
+
+.member-masonry--shannon .member-masonry__image img {
+  object-position: center 60%;
+}
+
 .member-masonry--tall {
-  min-height: 900px;
+  min-height: 1000px;
+}
+
+.member-masonry--sal {
+  min-height: 1050px;
+}
+
+.member-masonry--shannon {
+  min-height: 1050px;
 }
 
 .member-masonry__info {
