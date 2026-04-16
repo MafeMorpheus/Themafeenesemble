@@ -394,7 +394,7 @@ img {
 
 .member-masonry__image {
   overflow: hidden;
-  height: 700px;
+  height: 550px;
 }
 
 .member-masonry__image img {
@@ -405,7 +405,7 @@ img {
 }
 
 .member-masonry--sal .member-masonry__image img {
-  object-position: center 20%;
+  object-position: center 40%;
 }
 
 .member-masonry--shannon .member-masonry__image img {
