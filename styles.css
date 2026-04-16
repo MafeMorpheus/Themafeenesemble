@@ -397,19 +397,22 @@ img {
   height: 500px;
 }
 
+.member-masonry__image {
+  overflow: hidden;
+  height: auto;
+  max-height: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--gray-100);
+}
+
 .member-masonry__image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
   display: block;
-}
-
-.member-masonry--sal .member-masonry__image img {
-  object-position: center 35%;
-}
-
-.member-masonry--shannon .member-masonry__image img {
-  object-position: center 55%;
 }
 
 .member-masonry--tall,
