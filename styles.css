@@ -451,13 +451,15 @@ img {
 
 .member-card__image {
   overflow: hidden;
-  max-height: 550px;
+  min-height: 450px;
+  max-height: 600px;
 }
 
 .member-card__image img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: contain;
+  object-position: center top;
 }
 
 .member-card__info {
