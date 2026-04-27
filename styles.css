@@ -910,3 +910,8 @@ img {
     padding: 32px 24px;
   }
 }
+
+/* Ensure consistent card heights */
+.member-card {
+  min-height: 100%;
+}
