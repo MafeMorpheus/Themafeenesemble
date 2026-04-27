@@ -920,3 +920,10 @@ img {
 .gallery__item img {
   object-position: center 20%;
 }
+
+/* Show full image without cropping for photo L */
+.gallery__img--contain {
+  object-fit: contain;
+  object-position: center;
+  background: var(--black);
+}
