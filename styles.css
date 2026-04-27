@@ -457,7 +457,7 @@ img {
 .members__grid--secondary {
   max-width: 1200px;
   margin: 0 auto;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .member-card {
@@ -589,7 +589,7 @@ img {
 
 .gallery__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 4px;
 }
 
