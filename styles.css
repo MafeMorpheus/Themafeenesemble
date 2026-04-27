@@ -915,3 +915,8 @@ img {
 .member-card {
   min-height: 100%;
 }
+
+/* Adjust gallery image positioning to show more heads */
+.gallery__item img {
+  object-position: center 20%;
+}
