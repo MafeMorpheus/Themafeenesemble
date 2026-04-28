@@ -254,7 +254,7 @@ img {
 .hero__subtitle {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.85);
   letter-spacing: 0.04em;
   margin-bottom: 48px;
   line-height: 1.6;
@@ -543,7 +543,7 @@ img {
 }
 
 .service-card:hover .service-card__desc {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .service-card:hover .service-card__number {
@@ -671,7 +671,7 @@ img {
 }
 
 .contact__text {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.8;
   margin-bottom: 48px;
 }
