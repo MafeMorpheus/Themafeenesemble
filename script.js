@@ -55,25 +55,46 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
   const success = document.getElementById('form-success');
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
 
-    // Collect form data (ready for a backend or service like Formspree)
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
-    console.log('Form submission:', data);
+      const submitButton = form.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton ? submitButton.textContent : '';
 
-    // Show success message
-    form.hidden = true;
-    success.hidden = false;
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+      }
 
-    // Reset after 4 seconds
-    setTimeout(() => {
-      form.reset();
-      form.hidden = false;
-      success.hidden = true;
-    }, 4000);
-  });
+      try {
+        const formData = new FormData(form);
+        const body = new URLSearchParams(formData).toString();
+
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body,
+        });
+
+        if (!response.ok) {
+          throw new Error('Form submission failed');
+        }
+
+        form.reset();
+        form.hidden = true;
+        if (success) success.hidden = false;
+      } catch (error) {
+        console.error(error);
+        alert('Sorry, your message could not be sent. Please email Contact@TheMafeEnsemble.com directly.');
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+        }
+      }
+    });
+  }
 
   // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
