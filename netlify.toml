@@ -1,0 +1,6 @@
+[build]
+  publish = "."
+
+# Form notifications are configured in the Netlify dashboard
+# Go to Site settings > Forms > Form notifications
+# Add email notification for contact@themafeensemble.com
